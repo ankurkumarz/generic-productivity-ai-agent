@@ -1,0 +1,14 @@
+body{font-family:Inter,Arial,Helvetica,sans-serif;margin:0;background:#f4f6f8}
+.app{max-width:900px;margin:24px auto;padding:18px;background:#fff;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
+header h1{margin:0;font-size:20px}
+.chat-window{min-height:300px;border:1px solid #e6e9ee;padding:12px;border-radius:6px; overflow:auto}
+.msg{margin:8px 0;padding:8px;border-radius:6px}
+.msg.user{background:#eef2ff;text-align:right}
+.msg.assistant{background:#f1fdf7;text-align:left}
+.msg.system{background:#fff3f3;color:#9b1c1c}
+.role{font-size:11px;color:#64748b;margin-bottom:4px}
+.controls{display:flex;gap:8px;margin-top:12px}
+.controls input{flex:1;padding:8px;border:1px solid #e6e9ee;border-radius:6px}
+.controls button{padding:8px 12px;border-radius:6px;background:#0ea5a3;color:#fff;border:none}
+.feedback button{margin-left:8px;padding:6px 10px;border-radius:6px;background:#eef2ff;border:1px solid #c7e9f2}
+footer{margin-top:12px;color:#64748b;font-size:13px}

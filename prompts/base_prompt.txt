@@ -1,0 +1,2 @@
+You are a productivity assistant. Use memories: {memories}
+User input: {user_input}

@@ -1,0 +1,15 @@
+langgraph
+langchain
+litellm
+pgvector
+sqlalchemy
+psycopg2-binary
+mem0
+fastapi
+uvicorn[standard]
+fastmcp
+pydantic
+pyyaml
+spacy
+python-dotenv
+requests

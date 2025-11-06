@@ -1,0 +1,4 @@
+agent:
+  id: productivity-helper
+  name: Productivity Helper Agent
+  version: 0.1.0
