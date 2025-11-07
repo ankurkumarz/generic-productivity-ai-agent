@@ -4,7 +4,7 @@ litellm
 pgvector
 sqlalchemy
 psycopg2-binary
-mem0
+mem0ai
 fastapi
 uvicorn[standard]
 fastmcp
@@ -13,3 +13,5 @@ pyyaml
 spacy
 python-dotenv
 requests
+uvicorn
+langfuse
