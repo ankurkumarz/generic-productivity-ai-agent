@@ -1,0 +1,1099 @@
+{
+  "graph/nodes.py": {
+    "f": "nodes.py",
+    "p": "graph/nodes.py",
+    "v": "v1",
+    "c": {
+      "4bfa6e": {
+        "user": "Ankur Kumar",
+        "model": "gpt-5",
+        "extraContext": "tbd",
+        "timestamp": 1762476690,
+        "hash": "731bc925",
+        "messageId": "system_b843f560-bb73-11f0-958e-01dec47afc3e",
+        "codeBlockId": "system_b843f560-bb73-11f0-958e-01dec47afc3e-Codeblock-1",
+        "isActive": false
+      },
+      "c30ea0": {
+        "user": "Ankur Kumar",
+        "model": "gpt-5",
+        "extraContext": "tbd",
+        "timestamp": 1762476802,
+        "hash": "a67103a4",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "l": {
+      "0": {
+        "chunkId": "c30ea0",
+        "hash": "ad7b419e",
+        "encoded": "from%20typing%20import%20Any,%20Dict,%20List,%20TypedDict",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "c30ea0",
+        "hash": "96eacfb0",
+        "encoded": "__all__%20=%20%5B",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "c30ea0",
+        "hash": "bfc114ec",
+        "encoded": "%22AgentState%22,",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "c30ea0",
+        "hash": "34c186ab",
+        "encoded": "%22ensure_state_defaults%22,",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "c30ea0",
+        "hash": "24d7f867",
+        "encoded": "%22perception_node%22,",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "c30ea0",
+        "hash": "a76d05eb",
+        "encoded": "%22goal_setting_node%22,",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "c30ea0",
+        "hash": "07b48738",
+        "encoded": "%22memory_recall_node%22,",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "c30ea0",
+        "hash": "a4e07136",
+        "encoded": "%22reasoning_node%22,",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "c30ea0",
+        "hash": "b362fd1f",
+        "encoded": "%22planning_node%22,",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "c30ea0",
+        "hash": "152d4d52",
+        "encoded": "%22action_node%22,",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "c30ea0",
+        "hash": "59fed45d",
+        "encoded": "%22self_reflection_node%22,",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "c30ea0",
+        "hash": "34216683",
+        "encoded": "%22feedback_node%22,",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "c30ea0",
+        "hash": "6e38fda1",
+        "encoded": "%22memory_write_node%22,",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "c30ea0",
+        "hash": "2f57256f",
+        "encoded": "%5D",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "c30ea0",
+        "hash": "74760497",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "c30ea0",
+        "hash": "dfe8b710",
+        "encoded": "Node%20definitions%20for%20the%20agent%20workflow%20graph.",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "c30ea0",
+        "hash": "893ffa8e",
+        "encoded": "Each%20node%20is%20a%20pure%20function%20that:",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "c30ea0",
+        "hash": "f45ac3ea",
+        "encoded": "-%20Accepts%20a%20mutable%20%22state%22%20dictionary%20(AgentState).",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "c30ea0",
+        "hash": "cca4c403",
+        "encoded": "-%20Mutates%20the%20state%20with%20new%20keys%20relevant%20to%20its%20responsibility.",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "c30ea0",
+        "hash": "6a131724",
+        "encoded": "-%20Returns%20the%20same%20state%20for%20downstream%20nodes.",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "c30ea0",
+        "hash": "b0211d79",
+        "encoded": "Nodes%20included:",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "c30ea0",
+        "hash": "88941756",
+        "encoded": "-%20perception_node:%20Sanitizes%20input%20and%20infers%20lightweight%20signals%20(e.g.,%20entities).",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "c30ea0",
+        "hash": "eaab2e14",
+        "encoded": "-%20goal_setting_node:%20Extracts%20and%20persists%20explicit%20goals.",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "c30ea0",
+        "hash": "cc52eb7d",
+        "encoded": "-%20memory_recall_node:%20Retrieves%20relevant%20memories%20(stub).",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "c30ea0",
+        "hash": "515aea19",
+        "encoded": "-%20reasoning_node:%20Produces%20a%20model-driven%20response%20(stub).",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "c30ea0",
+        "hash": "5257afa7",
+        "encoded": "-%20planning_node:%20Produces%20a%20lightweight%20execution%20plan.",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "c30ea0",
+        "hash": "521628c1",
+        "encoded": "-%20action_node:%20Executes%20tools/APIs%20based%20on%20plan%20(stub).",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "c30ea0",
+        "hash": "fd4312c7",
+        "encoded": "-%20self_reflection_node:%20Reflects%20on%20outcomes%20(stub).",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "c30ea0",
+        "hash": "4aa8c514",
+        "encoded": "-%20feedback_node:%20Records%20explicit/implicit%20feedback%20(stub).",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "c30ea0",
+        "hash": "37099db1",
+        "encoded": "-%20memory_write_node:%20Persists%20new%20memories%20(stub).",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "c30ea0",
+        "hash": "c1d2cf4f",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "c30ea0",
+        "hash": "30e765e9",
+        "encoded": "class%20AgentState(TypedDict):",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "c30ea0",
+        "hash": "e2efb456",
+        "encoded": "%22%22%22Typed%20workflow%20state%20shared%20across%20all%20nodes.%22%22%22",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "c30ea0",
+        "hash": "d97d10b2",
+        "encoded": "user_input:%20str",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "c30ea0",
+        "hash": "b649637c",
+        "encoded": "sanitized_input:%20str",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "c30ea0",
+        "hash": "92ba524f",
+        "encoded": "entities:%20List%5Bstr%5D",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "c30ea0",
+        "hash": "6dbf1ee3",
+        "encoded": "goals:%20List%5Bstr%5D",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "c30ea0",
+        "hash": "336efbec",
+        "encoded": "plan:%20List%5Bstr%5D",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "c30ea0",
+        "hash": "de49abfa",
+        "encoded": "action_results:%20List%5Bstr%5D",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "c30ea0",
+        "hash": "41c40917",
+        "encoded": "memories_retrieved:%20List%5Bstr%5D",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "c30ea0",
+        "hash": "8299c4ca",
+        "encoded": "memories_to_write:%20List%5Bstr%5D",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "c30ea0",
+        "hash": "0b4a3dc7",
+        "encoded": "feedback:%20Any",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "c30ea0",
+        "hash": "6abc8289",
+        "encoded": "response:%20str",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "c30ea0",
+        "hash": "b233ec2d",
+        "encoded": "def%20ensure_state_defaults(state:%20Dict%5Bstr,%20Any%5D)%20-%3E%20AgentState:",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "c30ea0",
+        "hash": "a8a633e8",
+        "encoded": "%22%22%22Return%20AgentState%20with%20defaults%20for%20any%20missing%20keys.",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "c30ea0",
+        "hash": "f3ccb6d0",
+        "encoded": "Args:",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "c30ea0",
+        "hash": "6e38e195",
+        "encoded": "state:%20A%20possibly-partial%20state%20mapping.",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "c30ea0",
+        "hash": "c0c4d636",
+        "encoded": "Returns:",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "c30ea0",
+        "hash": "d8141b6d",
+        "encoded": "A%20fully-populated%20AgentState%20with%20sensible%20defaults.",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "c30ea0",
+        "hash": "03d7064f",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "c30ea0",
+        "hash": "7beccdc8",
+        "encoded": "typed:%20AgentState%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "c30ea0",
+        "hash": "76cfeeb1",
+        "encoded": "%22user_input%22:%20str(state.get(%22user_input%22,%20%22%22)),",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "c30ea0",
+        "hash": "bca33d4c",
+        "encoded": "%22sanitized_input%22:%20str(state.get(%22sanitized_input%22,%20%22%22)),",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "c30ea0",
+        "hash": "ba1a80f3",
+        "encoded": "%22entities%22:%20list(state.get(%22entities%22,%20%5B%5D)),",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "c30ea0",
+        "hash": "28854873",
+        "encoded": "%22goals%22:%20list(state.get(%22goals%22,%20%5B%5D)),",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "c30ea0",
+        "hash": "2d8643ca",
+        "encoded": "%22plan%22:%20list(state.get(%22plan%22,%20%5B%5D)),",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "c30ea0",
+        "hash": "b9990a5b",
+        "encoded": "%22action_results%22:%20list(state.get(%22action_results%22,%20%5B%5D)),",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "c30ea0",
+        "hash": "ee8c1116",
+        "encoded": "%22memories_retrieved%22:%20list(state.get(%22memories_retrieved%22,%20%5B%5D)),",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "c30ea0",
+        "hash": "6933e49d",
+        "encoded": "%22memories_to_write%22:%20list(state.get(%22memories_to_write%22,%20%5B%5D)),",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "c30ea0",
+        "hash": "3deb5660",
+        "encoded": "%22feedback%22:%20state.get(%22feedback%22),",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "c30ea0",
+        "hash": "6632f0ef",
+        "encoded": "%22response%22:%20str(state.get(%22response%22,%20%22%22)),",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "c30ea0",
+        "hash": "ae47b750",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "c30ea0",
+        "hash": "da2d0de4",
+        "encoded": "return%20typed",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "c30ea0",
+        "hash": "78d7c19c",
+        "encoded": "def%20perception_node(state:%20AgentState)%20-%3E%20AgentState:",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "c30ea0",
+        "hash": "f852a6d7",
+        "encoded": "%22%22%22Sanitize%20user%20input%20and%20extract%20lightweight%20entities.",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "c30ea0",
+        "hash": "2ad7f357",
+        "encoded": "Args:",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "c30ea0",
+        "hash": "c97c6a10",
+        "encoded": "state:%20Workflow%20state.%20Expected%20keys:",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "c30ea0",
+        "hash": "1aca0e1d",
+        "encoded": "-%20%22user_input%22:%20Raw%20user%20message.",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "c30ea0",
+        "hash": "a2e7c008",
+        "encoded": "Returns:",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "c30ea0",
+        "hash": "06289584",
+        "encoded": "The%20updated%20state%20with:",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "c30ea0",
+        "hash": "4e4efaa5",
+        "encoded": "-%20%22sanitized_input%22:%20Trimmed%20user%20input.",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "c30ea0",
+        "hash": "2664f865",
+        "encoded": "-%20%22entities%22:%20Naive%20entity%20list%20(e.g.,%20capitalized%20tokens).",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "c30ea0",
+        "hash": "f59fcbd9",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "c30ea0",
+        "hash": "d5e21810",
+        "encoded": "state%20=%20ensure_state_defaults(state)",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "c30ea0",
+        "hash": "000a1b8d",
+        "encoded": "text%20=%20state%5B%22user_input%22%5D.strip()",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "c30ea0",
+        "hash": "35a6fb7b",
+        "encoded": "state%5B%22sanitized_input%22%5D%20=%20text",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "c30ea0",
+        "hash": "959f48d1",
+        "encoded": "#%20Naive%20entity%20heuristic:%20capitalized%20tokens%20(placeholder%20for%20NER).",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "c30ea0",
+        "hash": "2dcc5d4f",
+        "encoded": "if%20text%20and%20not%20state%5B%22entities%22%5D:",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "c30ea0",
+        "hash": "14b88c12",
+        "encoded": "tokens%20=%20%5Bw.strip(%22,.!?;:%22)%20for%20w%20in%20text.split()%5D",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "c30ea0",
+        "hash": "3a1ca360",
+        "encoded": "state%5B%22entities%22%5D%20=%20%5Bw%20for%20w%20in%20tokens%20if%20w%5B:1%5D.isupper()%5D",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "c30ea0",
+        "hash": "10a8e742",
+        "encoded": "return%20state",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "c30ea0",
+        "hash": "2afa913c",
+        "encoded": "def%20goal_setting_node(state:%20AgentState)%20-%3E%20AgentState:",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "c30ea0",
+        "hash": "b1db04dc",
+        "encoded": "%22%22%22Extract%20explicit%20goals%20from%20sanitized%20input%20and%20append%20to%20state.",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "c30ea0",
+        "hash": "ac59361e",
+        "encoded": "Treats%20a%20sufficiently%20long%20or%20punctuated%20sentence%20as%20a%20goal.",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "c30ea0",
+        "hash": "8a207c1c",
+        "encoded": "Args:",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "c30ea0",
+        "hash": "4662e4a7",
+        "encoded": "state:%20Workflow%20state.%20Expected%20keys:",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "c30ea0",
+        "hash": "65fa3d5f",
+        "encoded": "-%20%22sanitized_input%22:%20Cleaned%20user%20text.",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "c30ea0",
+        "hash": "32c42bbb",
+        "encoded": "-%20%22goals%22:%20Optional%20list%20of%20existing%20goals.",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "c30ea0",
+        "hash": "7cb25fff",
+        "encoded": "Returns:",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "c30ea0",
+        "hash": "f59854c3",
+        "encoded": "The%20updated%20state%20with:",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "c30ea0",
+        "hash": "027173bc",
+        "encoded": "-%20%22goals%22:%20List%20of%20goals%20including%20any%20newly%20extracted%20goal.",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "c30ea0",
+        "hash": "3b51e88b",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "c30ea0",
+        "hash": "0589a510",
+        "encoded": "state%20=%20ensure_state_defaults(state)",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "c30ea0",
+        "hash": "83146c0b",
+        "encoded": "text%20=%20state%5B%22sanitized_input%22%5D",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "c30ea0",
+        "hash": "d426d894",
+        "encoded": "if%20text%20and%20(text.endswith((%22.%22,%20%22!%22,%20%22?%22))%20or%20len(text.split())%20%3E%203):",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "c30ea0",
+        "hash": "67503031",
+        "encoded": "state%5B%22goals%22%5D.append(text)",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "c30ea0",
+        "hash": "371993cc",
+        "encoded": "return%20state",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "c30ea0",
+        "hash": "3093c97c",
+        "encoded": "def%20memory_recall_node(state:%20AgentState)%20-%3E%20AgentState:",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "c30ea0",
+        "hash": "21b584ea",
+        "encoded": "%22%22%22Retrieve%20relevant%20memories%20for%20the%20current%20user%20and%20input%20context.",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "c30ea0",
+        "hash": "ed2fad79",
+        "encoded": "This%20is%20a%20stub%20that%20illustrates%20where%20vector%20DB%20retrieval%20would%20occur.",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "c30ea0",
+        "hash": "5330ec89",
+        "encoded": "Args:",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "c30ea0",
+        "hash": "f8c21f62",
+        "encoded": "state:%20Workflow%20state.",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "c30ea0",
+        "hash": "98bb8bb6",
+        "encoded": "Returns:",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "c30ea0",
+        "hash": "a3f8128f",
+        "encoded": "The%20updated%20state%20with:",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "c30ea0",
+        "hash": "73dfa20a",
+        "encoded": "-%20%22memories_retrieved%22:%20A%20list%20of%20memory%20snippets%20(strings).",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "c30ea0",
+        "hash": "035c377e",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "c30ea0",
+        "hash": "e700309f",
+        "encoded": "state%20=%20ensure_state_defaults(state)",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "c30ea0",
+        "hash": "0a3d4c9b",
+        "encoded": "#%20TODO:%20Integrate%20memory%20retrieval%20using%20mem0.ai%20or%20pgvector.",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "c30ea0",
+        "hash": "21ffbbb7",
+        "encoded": "#%20Placeholder:%20keep%20as%20empty%20list%20or%20attach%20mock%20snippets.",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "c30ea0",
+        "hash": "6ae3a232",
+        "encoded": "if%20not%20state%5B%22memories_retrieved%22%5D:",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "c30ea0",
+        "hash": "4a244c77",
+        "encoded": "state%5B%22memories_retrieved%22%5D%20=%20%5B%5D",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "c30ea0",
+        "hash": "876778db",
+        "encoded": "return%20state",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "c30ea0",
+        "hash": "e9e84975",
+        "encoded": "def%20reasoning_node(state:%20AgentState)%20-%3E%20AgentState:",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "c30ea0",
+        "hash": "117dfb59",
+        "encoded": "%22%22%22Produce%20a%20response%20from%20context%20(placeholder%20for%20LLM%20reasoning).",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "c30ea0",
+        "hash": "922065c8",
+        "encoded": "Args:",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "c30ea0",
+        "hash": "609f323e",
+        "encoded": "state:%20Workflow%20state.",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "c30ea0",
+        "hash": "90d20654",
+        "encoded": "Returns:",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "c30ea0",
+        "hash": "272aea16",
+        "encoded": "The%20updated%20state%20with:",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "c30ea0",
+        "hash": "b1ef36bb",
+        "encoded": "-%20%22response%22:%20A%20placeholder%20response%20string.",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "c30ea0",
+        "hash": "ac5dcc3d",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "c30ea0",
+        "hash": "10d1f04f",
+        "encoded": "state%20=%20ensure_state_defaults(state)",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "c30ea0",
+        "hash": "b952c11a",
+        "encoded": "state%5B%22response%22%5D%20=%20%22Stub%20response:%20planned%20action%22",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "c30ea0",
+        "hash": "7d9966a6",
+        "encoded": "return%20state",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "c30ea0",
+        "hash": "b35cf79e",
+        "encoded": "def%20planning_node(state:%20AgentState)%20-%3E%20AgentState:",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "c30ea0",
+        "hash": "f2279177",
+        "encoded": "%22%22%22Create%20a%20simple%20execution%20plan%20based%20on%20the%20sanitized%20input.",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "c30ea0",
+        "hash": "eb7fe8b2",
+        "encoded": "Args:",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "c30ea0",
+        "hash": "adc57028",
+        "encoded": "state:%20Workflow%20state.%20Expected%20keys:",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "c30ea0",
+        "hash": "6493b50a",
+        "encoded": "-%20%22sanitized_input%22:%20Cleaned%20user%20text.",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "c30ea0",
+        "hash": "1b988585",
+        "encoded": "Returns:",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "c30ea0",
+        "hash": "231eec73",
+        "encoded": "The%20updated%20state%20with:",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "c30ea0",
+        "hash": "def4d9de",
+        "encoded": "-%20%22plan%22:%20A%20list%20of%20plan%20step%20names%20as%20strings.",
+        "prevChunkIds": []
+      },
+      "170": {
+        "chunkId": "c30ea0",
+        "hash": "dc27593f",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "171": {
+        "chunkId": "c30ea0",
+        "hash": "c3e1f077",
+        "encoded": "state%20=%20ensure_state_defaults(state)",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "c30ea0",
+        "hash": "63eb66c6",
+        "encoded": "plan:%20List%5Bstr%5D%20=%20%5B%5D",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "c30ea0",
+        "hash": "84acf145",
+        "encoded": "if%20%22meeting%22%20in%20state%5B%22sanitized_input%22%5D.lower():",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "c30ea0",
+        "hash": "db9ac7aa",
+        "encoded": "plan.append(%22calendar.create_event%22)",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "c30ea0",
+        "hash": "6c97e706",
+        "encoded": "state%5B%22plan%22%5D%20=%20plan",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "c30ea0",
+        "hash": "855fd80f",
+        "encoded": "return%20state",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "c30ea0",
+        "hash": "762a6523",
+        "encoded": "def%20action_node(state:%20AgentState)%20-%3E%20AgentState:",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "c30ea0",
+        "hash": "0aa313a6",
+        "encoded": "%22%22%22Execute%20planned%20actions%20using%20available%20tools/APIs%20(stub).",
+        "prevChunkIds": []
+      },
+      "184": {
+        "chunkId": "c30ea0",
+        "hash": "630e9495",
+        "encoded": "Args:",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "c30ea0",
+        "hash": "442fd497",
+        "encoded": "state:%20Workflow%20state.%20Expected%20keys:",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "c30ea0",
+        "hash": "0be297d4",
+        "encoded": "-%20%22plan%22:%20List%20of%20planned%20steps.",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "c30ea0",
+        "hash": "d5ea0ece",
+        "encoded": "Returns:",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "c30ea0",
+        "hash": "cdfa8238",
+        "encoded": "The%20updated%20state%20with:",
+        "prevChunkIds": []
+      },
+      "190": {
+        "chunkId": "c30ea0",
+        "hash": "06651f30",
+        "encoded": "-%20%22action_results%22:%20Execution%20outcomes%20per%20step%20as%20strings.",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "c30ea0",
+        "hash": "ae43387f",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "c30ea0",
+        "hash": "fe77cee2",
+        "encoded": "state%20=%20ensure_state_defaults(state)",
+        "prevChunkIds": []
+      },
+      "194": {
+        "chunkId": "c30ea0",
+        "hash": "8eb6ea38",
+        "encoded": "if%20state%5B%22plan%22%5D:",
+        "prevChunkIds": []
+      },
+      "195": {
+        "chunkId": "c30ea0",
+        "hash": "2fd5093b",
+        "encoded": "state%5B%22action_results%22%5D%20=%20%5B%22ok%22%20for%20_%20in%20state%5B%22plan%22%5D%5D",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "c30ea0",
+        "hash": "5717684a",
+        "encoded": "else:",
+        "prevChunkIds": []
+      },
+      "197": {
+        "chunkId": "c30ea0",
+        "hash": "828ae45b",
+        "encoded": "state%5B%22action_results%22%5D%20=%20%5B%22ok%22%5D",
+        "prevChunkIds": []
+      },
+      "199": {
+        "chunkId": "c30ea0",
+        "hash": "575ac5a9",
+        "encoded": "return%20state",
+        "prevChunkIds": []
+      },
+      "202": {
+        "chunkId": "c30ea0",
+        "hash": "19745deb",
+        "encoded": "def%20self_reflection_node(state:%20AgentState)%20-%3E%20AgentState:",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "c30ea0",
+        "hash": "09df0567",
+        "encoded": "%22%22%22Analyze%20action%20outcomes%20and%20produce%20reflections%20or%20adjustments%20(stub).",
+        "prevChunkIds": []
+      },
+      "205": {
+        "chunkId": "c30ea0",
+        "hash": "6600c90e",
+        "encoded": "Args:",
+        "prevChunkIds": []
+      },
+      "206": {
+        "chunkId": "c30ea0",
+        "hash": "3e85ab42",
+        "encoded": "state:%20Workflow%20state.%20Expected%20keys:",
+        "prevChunkIds": []
+      },
+      "207": {
+        "chunkId": "c30ea0",
+        "hash": "85df09da",
+        "encoded": "-%20%22action_results%22:%20Outputs%20from%20action_node.",
+        "prevChunkIds": []
+      },
+      "209": {
+        "chunkId": "c30ea0",
+        "hash": "49bccceb",
+        "encoded": "Returns:",
+        "prevChunkIds": []
+      },
+      "210": {
+        "chunkId": "c30ea0",
+        "hash": "59d57c78",
+        "encoded": "The%20updated%20state%20with:",
+        "prevChunkIds": []
+      },
+      "211": {
+        "chunkId": "c30ea0",
+        "hash": "b7956051",
+        "encoded": "-%20%22feedback%22:%20A%20simple%20placeholder%20rating%20or%20notes.",
+        "prevChunkIds": []
+      },
+      "212": {
+        "chunkId": "c30ea0",
+        "hash": "ea509a6f",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "213": {
+        "chunkId": "c30ea0",
+        "hash": "b2abcbcc",
+        "encoded": "state%20=%20ensure_state_defaults(state)",
+        "prevChunkIds": []
+      },
+      "214": {
+        "chunkId": "c30ea0",
+        "hash": "680f9531",
+        "encoded": "state%5B%22feedback%22%5D%20=%20%7B%22rating%22:%205%7D",
+        "prevChunkIds": []
+      },
+      "215": {
+        "chunkId": "c30ea0",
+        "hash": "e6c30b43",
+        "encoded": "return%20state",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "c30ea0",
+        "hash": "2e155ae1",
+        "encoded": "def%20feedback_node(state:%20AgentState)%20-%3E%20AgentState:",
+        "prevChunkIds": []
+      },
+      "219": {
+        "chunkId": "c30ea0",
+        "hash": "d56f5862",
+        "encoded": "%22%22%22Record%20user/system%20feedback%20signals%20for%20learning%20loops.",
+        "prevChunkIds": []
+      },
+      "221": {
+        "chunkId": "c30ea0",
+        "hash": "2e1d5059",
+        "encoded": "Args:",
+        "prevChunkIds": []
+      },
+      "222": {
+        "chunkId": "c30ea0",
+        "hash": "5c5603fa",
+        "encoded": "state:%20Workflow%20state.",
+        "prevChunkIds": []
+      },
+      "224": {
+        "chunkId": "c30ea0",
+        "hash": "5481fa9b",
+        "encoded": "Returns:",
+        "prevChunkIds": []
+      },
+      "225": {
+        "chunkId": "c30ea0",
+        "hash": "f050a15e",
+        "encoded": "The%20updated%20state%20with:",
+        "prevChunkIds": []
+      },
+      "226": {
+        "chunkId": "c30ea0",
+        "hash": "05ec6f1a",
+        "encoded": "-%20%22feedback%22:%20Placeholder%20explicit%20feedback%20if%20not%20already%20present.",
+        "prevChunkIds": []
+      },
+      "227": {
+        "chunkId": "c30ea0",
+        "hash": "386d4ba8",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "c30ea0",
+        "hash": "8f8fd861",
+        "encoded": "state%20=%20ensure_state_defaults(state)",
+        "prevChunkIds": []
+      },
+      "229": {
+        "chunkId": "c30ea0",
+        "hash": "7d8a17b5",
+        "encoded": "if%20not%20state%5B%22feedback%22%5D:",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "c30ea0",
+        "hash": "ee846953",
+        "encoded": "state%5B%22feedback%22%5D%20=%20%7B%22rating%22:%205%7D",
+        "prevChunkIds": []
+      },
+      "231": {
+        "chunkId": "c30ea0",
+        "hash": "fb2291ae",
+        "encoded": "return%20state",
+        "prevChunkIds": []
+      },
+      "234": {
+        "chunkId": "c30ea0",
+        "hash": "4ea963b8",
+        "encoded": "%7C",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

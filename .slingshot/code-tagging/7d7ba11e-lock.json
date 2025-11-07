@@ -1,0 +1,1334 @@
+{
+  "README.md": {
+    "f": "README.md",
+    "p": "README.md",
+    "v": "v1",
+    "c": {
+      "ba832a": {
+        "user": "Ankur Kumar",
+        "model": "claude-sonnet-4@20250514",
+        "extraContext": "tbd",
+        "timestamp": 1762477371,
+        "hash": "89aba4a0",
+        "messageId": "system_3c50ee70-bb75-11f0-958e-01dec47afc3e",
+        "codeBlockId": "system_3c50ee70-bb75-11f0-958e-01dec47afc3e-Codeblock-1"
+      }
+    },
+    "l": {
+      "28": {
+        "chunkId": "ba832a",
+        "hash": "6b029c0c",
+        "encoded": "#%20Generic%20Productivity%20AI%20Agent",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "ba832a",
+        "hash": "48af4f8c",
+        "encoded": "A%20sophisticated%20AI%20agent%20system%20built%20with%20LangGraph%20for%20enhanced%20productivity%20and%20intelligent%20task%20automation.",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "ba832a",
+        "hash": "4a4568bd",
+        "encoded": "##%20%F0%9F%9A%80%20Overview",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "ba832a",
+        "hash": "f69fcd5f",
+        "encoded": "This%20project%20implements%20a%20generic%20productivity%20AI%20agent%20that%20leverages%20advanced%20graph-based%20workflows,%20memory%20management,%20and%20skill-based%20task%20execution.%20The%20agent%20is%20designed%20to%20handle%20complex%20multi-step%20tasks%20with%20intelligent%20reasoning%20and%20adaptive%20behavior.",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "ba832a",
+        "hash": "30ffe5f4",
+        "encoded": "##%20%F0%9F%8F%97%EF%B8%8F%20Architecture",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "ba832a",
+        "hash": "91b4e6a9",
+        "encoded": "The%20system%20follows%20a%20modular%20architecture%20with%20the%20following%20key%20components:",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "ba832a",
+        "hash": "9a4ede08",
+        "encoded": "###%20Core%20Components",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "ba832a",
+        "hash": "a71895ab",
+        "encoded": "-%20**Graph%20Workflow%20Engine**%20-%20LangGraph-based%20state%20management%20and%20execution%20flow",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "ba832a",
+        "hash": "18620d72",
+        "encoded": "-%20**Memory%20System**%20-%20Persistent%20and%20contextual%20memory%20for%20conversation%20continuity",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "ba832a",
+        "hash": "528ea1cd",
+        "encoded": "-%20**Skills%20Framework**%20-%20Modular%20capabilities%20for%20task%20execution",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "ba832a",
+        "hash": "6f443e16",
+        "encoded": "-%20**API%20Layer**%20-%20RESTful%20interface%20for%20external%20integrations",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "ba832a",
+        "hash": "15d3cda8",
+        "encoded": "-%20**MCP%20Tools**%20-%20Model%20Context%20Protocol%20tools%20for%20enhanced%20functionality",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "ba832a",
+        "hash": "8ed77d20",
+        "encoded": "-%20**Reflection%20Module**%20-%20Self-assessment%20and%20improvement%20capabilities",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "ba832a",
+        "hash": "ac185c00",
+        "encoded": "-%20**UI%20Interface**%20-%20User%20interaction%20layer",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "ba832a",
+        "hash": "f7ea51eb",
+        "encoded": "###%20Directory%20Structure",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "ba832a",
+        "hash": "b99b67e3",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "ba832a",
+        "hash": "ae573260",
+        "encoded": "generic-productivity-ai-agent/",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "ba832a",
+        "hash": "907a651c",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20agent_docs/%20%20%20%20%20%20%20%20%20%20#%20Agent%20documentation%20and%20guides",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "ba832a",
+        "hash": "43a2dcf1",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20api/%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20API%20endpoints%20and%20handlers",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "ba832a",
+        "hash": "a8350f0c",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20feedback/%20%20%20%20%20%20%20%20%20%20%20%20#%20Feedback%20collection%20and%20processing",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "ba832a",
+        "hash": "91a39190",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20graph/%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20LangGraph%20workflow%20definitions",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "ba832a",
+        "hash": "8906f2dd",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20mcp/%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Model%20Context%20Protocol%20tools",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "ba832a",
+        "hash": "b5499450",
+        "encoded": "%E2%94%82%20%20%20%E2%94%94%E2%94%80%E2%94%80%20tools/%20%20%20%20%20%20%20%20%20%20#%20MCP%20tool%20implementations",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "ba832a",
+        "hash": "7d5652fc",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20memory/%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Memory%20management%20system",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "ba832a",
+        "hash": "9df3dcff",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20prompts/%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Prompt%20templates%20and%20management",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "ba832a",
+        "hash": "248e5d4c",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20reflection/%20%20%20%20%20%20%20%20%20%20#%20Self-reflection%20and%20improvement",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "ba832a",
+        "hash": "f6eb06c5",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20skills/%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Agent%20skill%20modules",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "ba832a",
+        "hash": "328a78e6",
+        "encoded": "%E2%94%94%E2%94%80%E2%94%80%20ui/%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20User%20interface%20components",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "ba832a",
+        "hash": "ae05777e",
+        "encoded": "%E2%94%94%E2%94%80%E2%94%80%20src/%20%20%20%20%20%20%20%20%20%20%20%20#%20UI%20source%20code",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "ba832a",
+        "hash": "7b8bac46",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "ba832a",
+        "hash": "b38cc119",
+        "encoded": "##%20%F0%9F%9B%A0%EF%B8%8F%20Key%20Features",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "ba832a",
+        "hash": "563b6740",
+        "encoded": "###%20Intelligent%20Workflow%20Management",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "ba832a",
+        "hash": "9e284722",
+        "encoded": "-%20**State-based%20Execution**:%20Utilizes%20LangGraph%20for%20complex%20workflow%20orchestration",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "ba832a",
+        "hash": "9bb754ab",
+        "encoded": "-%20**Dynamic%20Routing**:%20Intelligent%20decision-making%20for%20task%20routing",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "ba832a",
+        "hash": "ae128c79",
+        "encoded": "-%20**Error%20Handling**:%20Robust%20error%20recovery%20and%20fallback%20mechanisms",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "ba832a",
+        "hash": "057aa590",
+        "encoded": "###%20Memory%20&%20Context",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "ba832a",
+        "hash": "62b7bd29",
+        "encoded": "-%20**Persistent%20Memory**:%20Long-term%20information%20retention%20across%20sessions",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "ba832a",
+        "hash": "f6194487",
+        "encoded": "-%20**Contextual%20Awareness**:%20Maintains%20conversation%20context%20and%20user%20preferences",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "ba832a",
+        "hash": "1079a2bd",
+        "encoded": "-%20**Adaptive%20Learning**:%20Improves%20performance%20based%20on%20interaction%20history",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "ba832a",
+        "hash": "cd8614ed",
+        "encoded": "###%20Extensible%20Skills%20System",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "ba832a",
+        "hash": "7e814e38",
+        "encoded": "-%20**Modular%20Design**:%20Easy%20addition%20of%20new%20capabilities",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "ba832a",
+        "hash": "04eb1ef2",
+        "encoded": "-%20**Skill%20Composition**:%20Combine%20multiple%20skills%20for%20complex%20tasks",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "ba832a",
+        "hash": "9568899b",
+        "encoded": "-%20**Dynamic%20Loading**:%20Runtime%20skill%20discovery%20and%20activation",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "ba832a",
+        "hash": "c2c82434",
+        "encoded": "###%20Advanced%20Tooling",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "ba832a",
+        "hash": "16861819",
+        "encoded": "-%20**MCP%20Integration**:%20Enhanced%20model%20capabilities%20through%20protocol%20tools",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "ba832a",
+        "hash": "f712461b",
+        "encoded": "-%20**Reflection%20Capabilities**:%20Self-assessment%20and%20performance%20optimization",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "ba832a",
+        "hash": "2ae31b49",
+        "encoded": "-%20**Feedback%20Loop**:%20Continuous%20improvement%20through%20user%20feedback",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "ba832a",
+        "hash": "b20db05a",
+        "encoded": "##%20%F0%9F%9A%80%20Getting%20Started",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "ba832a",
+        "hash": "a78b7f12",
+        "encoded": "###%20Prerequisites",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "ba832a",
+        "hash": "b5e19111",
+        "encoded": "-%20Python%203.8+",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "ba832a",
+        "hash": "178ffae7",
+        "encoded": "-%20Node.js%2016+%20(for%20UI%20components)",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "ba832a",
+        "hash": "3a7add77",
+        "encoded": "-%20Required%20dependencies%20(see%20requirements.txt)",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "ba832a",
+        "hash": "53cc49f0",
+        "encoded": "###%20Installation",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "ba832a",
+        "hash": "772a0198",
+        "encoded": "1.%20**Clone%20the%20repository**",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "ba832a",
+        "hash": "b3afdaff",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "ba832a",
+        "hash": "f49d4b41",
+        "encoded": "git%20clone%20%3Crepository-url%3E",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "ba832a",
+        "hash": "52b2e103",
+        "encoded": "cd%20generic-productivity-ai-agent",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "ba832a",
+        "hash": "062ff69e",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "ba832a",
+        "hash": "35e39048",
+        "encoded": "2.%20**Set%20up%20Python%20environment**",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "ba832a",
+        "hash": "e1ef3577",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "ba832a",
+        "hash": "f4fc4262",
+        "encoded": "python%20-m%20venv%20venv",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "ba832a",
+        "hash": "2e20e8bf",
+        "encoded": "source%20venv/bin/activate%20%20#%20On%20macOS/Linux",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "ba832a",
+        "hash": "f9624549",
+        "encoded": "pip%20install%20-r%20requirements.txt",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "ba832a",
+        "hash": "6c46ab95",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "ba832a",
+        "hash": "1df190f5",
+        "encoded": "3.%20**Install%20UI%20dependencies**",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "ba832a",
+        "hash": "3f705304",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "ba832a",
+        "hash": "adce7bc5",
+        "encoded": "cd%20ui",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "ba832a",
+        "hash": "8fa782ae",
+        "encoded": "npm%20install",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "ba832a",
+        "hash": "889502d6",
+        "encoded": "cd%20..",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "ba832a",
+        "hash": "34ee810d",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "ba832a",
+        "hash": "691a29a7",
+        "encoded": "4.%20**Configure%20environment%20variables**",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "ba832a",
+        "hash": "f2af8827",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "ba832a",
+        "hash": "4bb8a3a7",
+        "encoded": "cp%20.env.example%20.env",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "ba832a",
+        "hash": "b927951b",
+        "encoded": "#%20Edit%20.env%20with%20your%20configuration",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "ba832a",
+        "hash": "3b55dd73",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "ba832a",
+        "hash": "c8366c2e",
+        "encoded": "###%20Quick%20Start",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "ba832a",
+        "hash": "f6cb6469",
+        "encoded": "1.%20**Start%20the%20agent**",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "ba832a",
+        "hash": "79d3b468",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "ba832a",
+        "hash": "0efd7e9e",
+        "encoded": "python%20-m%20graph.workflow",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "ba832a",
+        "hash": "0debf7d6",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "ba832a",
+        "hash": "6a6fbc57",
+        "encoded": "2.%20**Launch%20the%20UI**%20(optional)",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "ba832a",
+        "hash": "ad1738ca",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "ba832a",
+        "hash": "94de6881",
+        "encoded": "cd%20ui",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "ba832a",
+        "hash": "3793aec2",
+        "encoded": "npm%20start",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "ba832a",
+        "hash": "f5522d99",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "ba832a",
+        "hash": "8c899188",
+        "encoded": "3.%20**Access%20the%20API**",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "ba832a",
+        "hash": "ec6a83e8",
+        "encoded": "-%20API%20endpoint:%20%60http://localhost:8000%60",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "ba832a",
+        "hash": "e2a53526",
+        "encoded": "-%20UI%20interface:%20%60http://localhost:3000%60",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "ba832a",
+        "hash": "37c08904",
+        "encoded": "##%20%F0%9F%93%96%20Usage",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "ba832a",
+        "hash": "4a74bd19",
+        "encoded": "###%20Basic%20Interaction",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "ba832a",
+        "hash": "0be628ca",
+        "encoded": "The%20agent%20can%20be%20interacted%20with%20through%20multiple%20interfaces:",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "ba832a",
+        "hash": "9bb7d017",
+        "encoded": "####%20API%20Usage",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "ba832a",
+        "hash": "50f03338",
+        "encoded": "%60%60%60python",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "ba832a",
+        "hash": "fbd2f757",
+        "encoded": "import%20requests",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "ba832a",
+        "hash": "0da50687",
+        "encoded": "response%20=%20requests.post('http://localhost:8000/chat',%20%7B",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "ba832a",
+        "hash": "3e78ae51",
+        "encoded": "'message':%20'Help%20me%20organize%20my%20tasks%20for%20today',",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "ba832a",
+        "hash": "7cba61f3",
+        "encoded": "'user_id':%20'user123'",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "ba832a",
+        "hash": "490cbdd1",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "ba832a",
+        "hash": "3400feea",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "ba832a",
+        "hash": "7c8be8a6",
+        "encoded": "####%20Direct%20Python%20Integration",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "ba832a",
+        "hash": "b1578bb2",
+        "encoded": "%60%60%60python",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "ba832a",
+        "hash": "b7dc6e8e",
+        "encoded": "from%20graph.workflow%20import%20ProductivityAgent",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "ba832a",
+        "hash": "5f019218",
+        "encoded": "agent%20=%20ProductivityAgent()",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "ba832a",
+        "hash": "8b238737",
+        "encoded": "result%20=%20agent.process_request(%22Schedule%20a%20meeting%20for%20tomorrow%22)",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "ba832a",
+        "hash": "79097a97",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "ba832a",
+        "hash": "ca7ade98",
+        "encoded": "###%20Advanced%20Features",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "ba832a",
+        "hash": "9b8a2ab8",
+        "encoded": "####%20Custom%20Skills",
+        "prevChunkIds": []
+      },
+      "170": {
+        "chunkId": "ba832a",
+        "hash": "48a5a9c0",
+        "encoded": "Create%20custom%20skills%20by%20extending%20the%20base%20skill%20class:",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "ba832a",
+        "hash": "7e9bfa8d",
+        "encoded": "%60%60%60python",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "ba832a",
+        "hash": "4673c9a6",
+        "encoded": "from%20skills.base%20import%20BaseSkill",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "ba832a",
+        "hash": "c56e61d9",
+        "encoded": "class%20CustomSkill(BaseSkill):",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "ba832a",
+        "hash": "b044881e",
+        "encoded": "def%20execute(self,%20context):",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "ba832a",
+        "hash": "c6043631",
+        "encoded": "#%20Your%20skill%20implementation",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "ba832a",
+        "hash": "e453b26d",
+        "encoded": "return%20result",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "ba832a",
+        "hash": "4febba7e",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "ba832a",
+        "hash": "c79ad449",
+        "encoded": "####%20Memory%20Configuration",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "ba832a",
+        "hash": "ea4189ad",
+        "encoded": "Configure%20memory%20settings%20in%20your%20environment:",
+        "prevChunkIds": []
+      },
+      "184": {
+        "chunkId": "ba832a",
+        "hash": "374f22a0",
+        "encoded": "%60%60%60python",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "ba832a",
+        "hash": "9f5f5be3",
+        "encoded": "MEMORY_TYPE%20=%20%22persistent%22%20%20#%20or%20%22session%22",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "ba832a",
+        "hash": "61a48ff2",
+        "encoded": "MEMORY_RETENTION_DAYS%20=%2030",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "ba832a",
+        "hash": "01a8494f",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "ba832a",
+        "hash": "e7209512",
+        "encoded": "##%20%F0%9F%94%A7%20Configuration",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "ba832a",
+        "hash": "bda0e421",
+        "encoded": "###%20Environment%20Variables",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "ba832a",
+        "hash": "9387ed60",
+        "encoded": "%7C%20Variable%20%7C%20Description%20%7C%20Default%20%7C",
+        "prevChunkIds": []
+      },
+      "194": {
+        "chunkId": "ba832a",
+        "hash": "5abd7928",
+        "encoded": "%7C----------%7C-------------%7C---------%7C",
+        "prevChunkIds": []
+      },
+      "195": {
+        "chunkId": "ba832a",
+        "hash": "686a280b",
+        "encoded": "%7C%20%60AGENT_NAME%60%20%7C%20Name%20of%20the%20AI%20agent%20%7C%20%22ProductivityAgent%22%20%7C",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "ba832a",
+        "hash": "70111789",
+        "encoded": "%7C%20%60LOG_LEVEL%60%20%7C%20Logging%20level%20%7C%20%22INFO%22%20%7C",
+        "prevChunkIds": []
+      },
+      "197": {
+        "chunkId": "ba832a",
+        "hash": "3725ca2b",
+        "encoded": "%7C%20%60API_PORT%60%20%7C%20API%20server%20port%20%7C%208000%20%7C",
+        "prevChunkIds": []
+      },
+      "198": {
+        "chunkId": "ba832a",
+        "hash": "7d2c3faa",
+        "encoded": "%7C%20%60MEMORY_BACKEND%60%20%7C%20Memory%20storage%20backend%20%7C%20%22sqlite%22%20%7C",
+        "prevChunkIds": []
+      },
+      "199": {
+        "chunkId": "ba832a",
+        "hash": "76d9100b",
+        "encoded": "%7C%20%60SKILLS_PATH%60%20%7C%20Path%20to%20skills%20directory%20%7C%20%22./skills%22%20%7C",
+        "prevChunkIds": []
+      },
+      "201": {
+        "chunkId": "ba832a",
+        "hash": "6142692a",
+        "encoded": "###%20Customization",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "ba832a",
+        "hash": "7194604b",
+        "encoded": "####%20Adding%20New%20Skills",
+        "prevChunkIds": []
+      },
+      "204": {
+        "chunkId": "ba832a",
+        "hash": "027af225",
+        "encoded": "1.%20Create%20a%20new%20skill%20file%20in%20the%20%5Bskills/%5D(skills/)%20directory",
+        "prevChunkIds": []
+      },
+      "205": {
+        "chunkId": "ba832a",
+        "hash": "35ecd8b8",
+        "encoded": "2.%20Implement%20the%20required%20interface",
+        "prevChunkIds": []
+      },
+      "206": {
+        "chunkId": "ba832a",
+        "hash": "1b8dfd17",
+        "encoded": "3.%20Register%20the%20skill%20in%20the%20skills%20registry",
+        "prevChunkIds": []
+      },
+      "208": {
+        "chunkId": "ba832a",
+        "hash": "662d917b",
+        "encoded": "####%20Extending%20Workflows",
+        "prevChunkIds": []
+      },
+      "209": {
+        "chunkId": "ba832a",
+        "hash": "4177ad83",
+        "encoded": "1.%20Modify%20%5Bgraph/workflow.py%5D(graph/workflow.py)%20to%20add%20new%20states",
+        "prevChunkIds": []
+      },
+      "210": {
+        "chunkId": "ba832a",
+        "hash": "df65ef45",
+        "encoded": "2.%20Define%20transitions%20and%20conditions",
+        "prevChunkIds": []
+      },
+      "211": {
+        "chunkId": "ba832a",
+        "hash": "e4463e6b",
+        "encoded": "3.%20Test%20the%20new%20workflow%20paths",
+        "prevChunkIds": []
+      },
+      "213": {
+        "chunkId": "ba832a",
+        "hash": "531c4c04",
+        "encoded": "##%20%F0%9F%A7%AA%20Testing",
+        "prevChunkIds": []
+      },
+      "215": {
+        "chunkId": "ba832a",
+        "hash": "67f0047e",
+        "encoded": "Run%20the%20test%20suite:",
+        "prevChunkIds": []
+      },
+      "217": {
+        "chunkId": "ba832a",
+        "hash": "9307dd67",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "ba832a",
+        "hash": "0cfd199f",
+        "encoded": "python%20-m%20pytest%20tests/",
+        "prevChunkIds": []
+      },
+      "219": {
+        "chunkId": "ba832a",
+        "hash": "55d11e32",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "221": {
+        "chunkId": "ba832a",
+        "hash": "e22e4de2",
+        "encoded": "Run%20specific%20test%20categories:",
+        "prevChunkIds": []
+      },
+      "223": {
+        "chunkId": "ba832a",
+        "hash": "3a3c009d",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "224": {
+        "chunkId": "ba832a",
+        "hash": "74cc1068",
+        "encoded": "#%20Test%20workflows",
+        "prevChunkIds": []
+      },
+      "225": {
+        "chunkId": "ba832a",
+        "hash": "c90c535d",
+        "encoded": "python%20-m%20pytest%20tests/test_workflow.py",
+        "prevChunkIds": []
+      },
+      "227": {
+        "chunkId": "ba832a",
+        "hash": "b5964cc6",
+        "encoded": "#%20Test%20skills",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "ba832a",
+        "hash": "fd8f4ccb",
+        "encoded": "python%20-m%20pytest%20tests/test_skills.py",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "ba832a",
+        "hash": "d399f28f",
+        "encoded": "#%20Test%20memory",
+        "prevChunkIds": []
+      },
+      "231": {
+        "chunkId": "ba832a",
+        "hash": "cf47f33a",
+        "encoded": "python%20-m%20pytest%20tests/test_memory.py",
+        "prevChunkIds": []
+      },
+      "232": {
+        "chunkId": "ba832a",
+        "hash": "89131f8b",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "234": {
+        "chunkId": "ba832a",
+        "hash": "10412e05",
+        "encoded": "##%20%F0%9F%93%8A%20Monitoring%20&%20Debugging",
+        "prevChunkIds": []
+      },
+      "236": {
+        "chunkId": "ba832a",
+        "hash": "3911bf8c",
+        "encoded": "###%20Logging",
+        "prevChunkIds": []
+      },
+      "237": {
+        "chunkId": "ba832a",
+        "hash": "8fc20550",
+        "encoded": "The%20agent%20provides%20comprehensive%20logging:",
+        "prevChunkIds": []
+      },
+      "239": {
+        "chunkId": "ba832a",
+        "hash": "fb8eb5fb",
+        "encoded": "%60%60%60python",
+        "prevChunkIds": []
+      },
+      "240": {
+        "chunkId": "ba832a",
+        "hash": "4ccd5ec6",
+        "encoded": "import%20logging",
+        "prevChunkIds": []
+      },
+      "241": {
+        "chunkId": "ba832a",
+        "hash": "c6686bf0",
+        "encoded": "logging.basicConfig(level=logging.DEBUG)",
+        "prevChunkIds": []
+      },
+      "242": {
+        "chunkId": "ba832a",
+        "hash": "775a82e0",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "244": {
+        "chunkId": "ba832a",
+        "hash": "51b8ae86",
+        "encoded": "###%20Performance%20Metrics",
+        "prevChunkIds": []
+      },
+      "245": {
+        "chunkId": "ba832a",
+        "hash": "d37669a2",
+        "encoded": "Monitor%20agent%20performance%20through%20built-in%20metrics:",
+        "prevChunkIds": []
+      },
+      "247": {
+        "chunkId": "ba832a",
+        "hash": "743f5cf2",
+        "encoded": "-%20Task%20completion%20rates",
+        "prevChunkIds": []
+      },
+      "248": {
+        "chunkId": "ba832a",
+        "hash": "94fa8fd0",
+        "encoded": "-%20Response%20times",
+        "prevChunkIds": []
+      },
+      "249": {
+        "chunkId": "ba832a",
+        "hash": "91b58d01",
+        "encoded": "-%20Memory%20usage",
+        "prevChunkIds": []
+      },
+      "250": {
+        "chunkId": "ba832a",
+        "hash": "d7ef4a0a",
+        "encoded": "-%20Skill%20utilization",
+        "prevChunkIds": []
+      },
+      "252": {
+        "chunkId": "ba832a",
+        "hash": "462778b4",
+        "encoded": "###%20Debugging%20Tools",
+        "prevChunkIds": []
+      },
+      "253": {
+        "chunkId": "ba832a",
+        "hash": "7dd7c1aa",
+        "encoded": "-%20**Workflow%20Visualization**:%20Generate%20workflow%20diagrams",
+        "prevChunkIds": []
+      },
+      "254": {
+        "chunkId": "ba832a",
+        "hash": "79cafb5e",
+        "encoded": "-%20**State%20Inspection**:%20Real-time%20state%20monitoring",
+        "prevChunkIds": []
+      },
+      "255": {
+        "chunkId": "ba832a",
+        "hash": "a47ae811",
+        "encoded": "-%20**Trace%20Analysis**:%20Detailed%20execution%20traces",
+        "prevChunkIds": []
+      },
+      "257": {
+        "chunkId": "ba832a",
+        "hash": "1d963d0d",
+        "encoded": "##%20%F0%9F%A4%9D%20Contributing",
+        "prevChunkIds": []
+      },
+      "259": {
+        "chunkId": "ba832a",
+        "hash": "650d6db5",
+        "encoded": "We%20welcome%20contributions!%20Please%20see%20our%20contributing%20guidelines:",
+        "prevChunkIds": []
+      },
+      "261": {
+        "chunkId": "ba832a",
+        "hash": "bc2a86bc",
+        "encoded": "1.%20**Fork%20the%20repository**",
+        "prevChunkIds": []
+      },
+      "262": {
+        "chunkId": "ba832a",
+        "hash": "d5792d62",
+        "encoded": "2.%20**Create%20a%20feature%20branch**",
+        "prevChunkIds": []
+      },
+      "263": {
+        "chunkId": "ba832a",
+        "hash": "51b96029",
+        "encoded": "3.%20**Make%20your%20changes**",
+        "prevChunkIds": []
+      },
+      "264": {
+        "chunkId": "ba832a",
+        "hash": "824be39e",
+        "encoded": "4.%20**Add%20tests**",
+        "prevChunkIds": []
+      },
+      "265": {
+        "chunkId": "ba832a",
+        "hash": "45bc2509",
+        "encoded": "5.%20**Submit%20a%20pull%20request**",
+        "prevChunkIds": []
+      },
+      "267": {
+        "chunkId": "ba832a",
+        "hash": "46dcdd28",
+        "encoded": "###%20Development%20Setup",
+        "prevChunkIds": []
+      },
+      "269": {
+        "chunkId": "ba832a",
+        "hash": "8c08b60e",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "270": {
+        "chunkId": "ba832a",
+        "hash": "bad831a0",
+        "encoded": "#%20Install%20development%20dependencies",
+        "prevChunkIds": []
+      },
+      "271": {
+        "chunkId": "ba832a",
+        "hash": "2eb68e9a",
+        "encoded": "pip%20install%20-r%20requirements-dev.txt",
+        "prevChunkIds": []
+      },
+      "273": {
+        "chunkId": "ba832a",
+        "hash": "748d3800",
+        "encoded": "#%20Set%20up%20pre-commit%20hooks",
+        "prevChunkIds": []
+      },
+      "274": {
+        "chunkId": "ba832a",
+        "hash": "2a8c18e1",
+        "encoded": "pre-commit%20install",
+        "prevChunkIds": []
+      },
+      "276": {
+        "chunkId": "ba832a",
+        "hash": "7ce60018",
+        "encoded": "#%20Run%20linting",
+        "prevChunkIds": []
+      },
+      "277": {
+        "chunkId": "ba832a",
+        "hash": "f939f70d",
+        "encoded": "flake8%20.",
+        "prevChunkIds": []
+      },
+      "278": {
+        "chunkId": "ba832a",
+        "hash": "099a3395",
+        "encoded": "black%20.",
+        "prevChunkIds": []
+      },
+      "279": {
+        "chunkId": "ba832a",
+        "hash": "bbe409e4",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "281": {
+        "chunkId": "ba832a",
+        "hash": "39f25bb0",
+        "encoded": "##%20%F0%9F%93%9A%20Documentation",
+        "prevChunkIds": []
+      },
+      "283": {
+        "chunkId": "ba832a",
+        "hash": "2c3d0db4",
+        "encoded": "-%20**API%20Documentation**:%20Available%20at%20%60/docs%60%20when%20running%20the%20server",
+        "prevChunkIds": []
+      },
+      "284": {
+        "chunkId": "ba832a",
+        "hash": "c4bd3fb9",
+        "encoded": "-%20**Architecture%20Guide**:%20See%20%5Bagent_docs/%5D(agent_docs/)%20directory",
+        "prevChunkIds": []
+      },
+      "285": {
+        "chunkId": "ba832a",
+        "hash": "5c8aea9f",
+        "encoded": "-%20**Skills%20Reference**:%20Individual%20skill%20documentation%20in%20%5Bskills/%5D(skills/)",
+        "prevChunkIds": []
+      },
+      "286": {
+        "chunkId": "ba832a",
+        "hash": "f102cf40",
+        "encoded": "-%20**Workflow%20Guide**:%20Detailed%20workflow%20documentation",
+        "prevChunkIds": []
+      },
+      "288": {
+        "chunkId": "ba832a",
+        "hash": "d916c418",
+        "encoded": "##%20%F0%9F%94%92%20Security",
+        "prevChunkIds": []
+      },
+      "290": {
+        "chunkId": "ba832a",
+        "hash": "67a42b2c",
+        "encoded": "-%20**Input%20Validation**:%20All%20inputs%20are%20validated%20and%20sanitized",
+        "prevChunkIds": []
+      },
+      "291": {
+        "chunkId": "ba832a",
+        "hash": "d0b085e5",
+        "encoded": "-%20**Rate%20Limiting**:%20API%20endpoints%20include%20rate%20limiting",
+        "prevChunkIds": []
+      },
+      "292": {
+        "chunkId": "ba832a",
+        "hash": "c4f0c3d0",
+        "encoded": "-%20**Authentication**:%20Configurable%20authentication%20mechanisms",
+        "prevChunkIds": []
+      },
+      "293": {
+        "chunkId": "ba832a",
+        "hash": "3f80ec7e",
+        "encoded": "-%20**Data%20Privacy**:%20User%20data%20handling%20follows%20privacy%20best%20practices",
+        "prevChunkIds": []
+      },
+      "295": {
+        "chunkId": "ba832a",
+        "hash": "551546c0",
+        "encoded": "##%20%F0%9F%93%84%20License",
+        "prevChunkIds": []
+      },
+      "297": {
+        "chunkId": "ba832a",
+        "hash": "7c592a81",
+        "encoded": "This%20project%20is%20licensed%20under%20the%20MIT%20License%20-%20see%20the%20LICENSE%20file%20for%20details.",
+        "prevChunkIds": []
+      },
+      "299": {
+        "chunkId": "ba832a",
+        "hash": "74ece0b0",
+        "encoded": "##%20%F0%9F%86%98%20Support",
+        "prevChunkIds": []
+      },
+      "301": {
+        "chunkId": "ba832a",
+        "hash": "357e54de",
+        "encoded": "-%20**Issues**:%20Report%20bugs%20and%20feature%20requests%20on%20GitHub",
+        "prevChunkIds": []
+      },
+      "302": {
+        "chunkId": "ba832a",
+        "hash": "1f468126",
+        "encoded": "-%20**Discussions**:%20Join%20community%20discussions",
+        "prevChunkIds": []
+      },
+      "303": {
+        "chunkId": "ba832a",
+        "hash": "401ecb2f",
+        "encoded": "-%20**Documentation**:%20Comprehensive%20docs%20available",
+        "prevChunkIds": []
+      },
+      "304": {
+        "chunkId": "ba832a",
+        "hash": "dbee66cf",
+        "encoded": "-%20**Examples**:%20Sample%20implementations%20in%20the%20examples%20directory",
+        "prevChunkIds": []
+      },
+      "306": {
+        "chunkId": "ba832a",
+        "hash": "1a8cf5e9",
+        "encoded": "##%20%F0%9F%97%BA%EF%B8%8F%20Roadmap",
+        "prevChunkIds": []
+      },
+      "308": {
+        "chunkId": "ba832a",
+        "hash": "081a97d9",
+        "encoded": "###%20Upcoming%20Features",
+        "prevChunkIds": []
+      },
+      "309": {
+        "chunkId": "ba832a",
+        "hash": "30e25eda",
+        "encoded": "-%20%5B%20%5D%20Enhanced%20natural%20language%20understanding",
+        "prevChunkIds": []
+      },
+      "310": {
+        "chunkId": "ba832a",
+        "hash": "bf466793",
+        "encoded": "-%20%5B%20%5D%20Multi-modal%20input%20support",
+        "prevChunkIds": []
+      },
+      "311": {
+        "chunkId": "ba832a",
+        "hash": "469c02f0",
+        "encoded": "-%20%5B%20%5D%20Advanced%20scheduling%20capabilities",
+        "prevChunkIds": []
+      },
+      "312": {
+        "chunkId": "ba832a",
+        "hash": "8cbbd797",
+        "encoded": "-%20%5B%20%5D%20Integration%20with%20popular%20productivity%20tools",
+        "prevChunkIds": []
+      },
+      "313": {
+        "chunkId": "ba832a",
+        "hash": "24278070",
+        "encoded": "-%20%5B%20%5D%20Mobile%20application%20support",
+        "prevChunkIds": []
+      },
+      "315": {
+        "chunkId": "ba832a",
+        "hash": "8788f363",
+        "encoded": "###%20Version%20History",
+        "prevChunkIds": []
+      },
+      "316": {
+        "chunkId": "ba832a",
+        "hash": "16de118f",
+        "encoded": "-%20**v1.0.0**:%20Initial%20release%20with%20core%20functionality",
+        "prevChunkIds": []
+      },
+      "317": {
+        "chunkId": "ba832a",
+        "hash": "0c65cf3b",
+        "encoded": "-%20**v1.1.0**:%20Added%20MCP%20tools%20integration",
+        "prevChunkIds": []
+      },
+      "318": {
+        "chunkId": "ba832a",
+        "hash": "7ceddfbc",
+        "encoded": "-%20**v1.2.0**:%20Enhanced%20memory%20system",
+        "prevChunkIds": []
+      },
+      "319": {
+        "chunkId": "ba832a",
+        "hash": "065a2f10",
+        "encoded": "-%20**v2.0.0**:%20Complete%20UI%20overhaul%20(planned)",
+        "prevChunkIds": []
+      },
+      "321": {
+        "chunkId": "ba832a",
+        "hash": "c0fa7c41",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "323": {
+        "chunkId": "ba832a",
+        "hash": "e979fd72",
+        "encoded": "**Built%20with%20%E2%9D%A4%EF%B8%8F%20by%20the%20Productivity%20AI%20Team**",
+        "prevChunkIds": []
+      },
+      "325": {
+        "chunkId": "ba832a",
+        "hash": "d0df94e1",
+        "encoded": "For%20more%20information,%20visit%20our%20%5Bdocumentation%5D(agent_docs/)%20or%20check%20out%20the%20%5BAPI%20reference%5D(api/).",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

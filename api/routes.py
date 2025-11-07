@@ -1,7 +1,9 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
 from utils import agent_run_once, mcp_adapter
+
 router = APIRouter()
+
 class InteractReq(BaseModel):
     user_id: str | None = None
     session_id: str | None = None
