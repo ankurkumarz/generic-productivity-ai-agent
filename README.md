@@ -75,9 +75,9 @@ The system follows a modular architecture with the following key components:
 
 2. **Set up Python environment**
     ```bash
-    python -m venv venv
-    source venv/bin/activate  # On macOS/Linux
-    pip install -r requirements.txt
+    uv venv --python=3.12
+    source .venv/bin/activate  # On macOS/Linux
+    uv sync
     ```
 
 3. **Install UI dependencies**
@@ -97,7 +97,7 @@ The system follows a modular architecture with the following key components:
 
 1. **Start the agent**
     ```bash
-    python -m graph.workflow
+    uv run main.py
     ```
 
 2. **Launch the UI** (optional)
