@@ -1,10 +1,7 @@
-# Generic Productivity AI Agent
+# Agentic Productivity Assistant (Reference)
 
-A sophisticated AI agent system built with LangGraph for enhanced productivity and intelligent task automation.
-
-## 🚀 Overview
-
-This project implements a generic productivity AI agent that leverages advanced graph-based workflows, memory management, and skill-based task execution. The agent is designed to handle complex multi-step tasks with intelligent reasoning and adaptive behavior.
+- Simplistic implementation covering essential aspects of building AI Agent following Agentic AI principles (Goal Setting, Perception, Reasoning, Planning, Action, Learning, Memory)
+- The idea is the demonstrate the best practices of building an AI Agent applying evolving design patterns (e.g. reflection, self-improving agent, long-term memory), emerging techniques (e.g. context engineering), industry standards (A2A, MCP), and more.
 
 ## 🏗️ Architecture
 
