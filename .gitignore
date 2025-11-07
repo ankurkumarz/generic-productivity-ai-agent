@@ -6,7 +6,7 @@ __pycache__/
 .venv/*
 # C extensions
 *.so
-
+.slingshot
 # Distribution / packaging
 .Python
 build/
